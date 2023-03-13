@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+body{ 
+    background-color: #ffffff;
+}
+.corpWeb{
+    border-color: #15213c;
+    list-style: none;
+}
+.logo{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 15px;
+    color: #224b65;
+}
+.items a{
+    font-family: 'Montserrat', sans-serif;
+    margin: 15px;
+    color: #43a2ce;
+    position: relative;
+    text-decoration: none;
+    list-style: none;
+}
+.toggle{
+    display: none;
+}
+.inicio{ 
+    font-family:  'Montserrat', sans-serif;
+    color:#224b65;
+    margin:none;
+
+}
+.about{
+    font-family: 'Montserrat', sans-serif;
+    color:#224b65;
+}
+.info{
+    font-family:  'Montserrat', sans-serif;
+    color: #224b65;
+}
+.servicios{
+    font-family:  'Montserrat', sans-serif;
+    color: #224b65;
+} 
+.contacto{
+    font-family:  'Montserrat', sans-serif;
+    color: #224b65;
+}
+@media (max-width: 768px) {
+    .items{
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: #132d5c(255, 128, 0);
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: -webkit-fill-available;        
+        transform: translateX(-100%);
+        transition: 0.3s ease all;
+    }
+    .items.open{
+        transform: translateX(0) !important
+    }
+    .toggle{
+        display: flex !important;
+        flex-direction: column;                
+        margin: 15px;
+    }
+    .toggle span{
+        width: 30px;
+        height: 4px;
+        background: #15213c;
+        margin-bottom: 5px;
+        border-radius: 2px;             
+        transform-origin: 5px 0px;
+        transition: all 0.2s linear;
+    }
+    .toggle.open > span{
+        transform: rotate(45deg) translate(0px, 0px);
+    }
+    .toggle.open > span:nth-child(2){
+        display: none;
+    }
+    .toggle.open > span:nth-child(3){
+        transform: rotate(-45deg) translate(-5px, 1px);
+    }
+}
