@@ -36,9 +36,9 @@ export default function CorpWeb() {
       </div>
       <div className="servicios">
           <h1>Servicios</h1>
-          <h3>Telemedicina</h3>
+          <h2>Telemedicina</h2>
           <p>...</p>
-          <h3>Atención domiciliaria</h3>
+          <h2>Atención domiciliaria</h2>
       </div>
       <div className="contacto">
           <h1>Contacto</h1>

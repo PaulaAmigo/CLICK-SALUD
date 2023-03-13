@@ -30,6 +30,9 @@ body{
     font-family:  'Montserrat', sans-serif;
     color:#224b65;
     margin:none;
+    display: flex;
+    justify-content: center;
+   
 
 }
 .about{
